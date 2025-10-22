@@ -1,0 +1,236 @@
+/* Responsive Design Styles */
+/* Base Mobile First Approach */
+
+/* Common Responsive Utilities */
+.container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Responsive */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav {
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: space-around;
+    }
+
+    .brand {
+        margin-right: 0;
+    }
+
+    .nav a {
+        padding: 0.5rem;
+    }
+}
+
+/* Hero Section Responsive */
+@media (max-width: 992px) {
+    .hero-inner {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .hero-copy {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-media {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+}
+
+/* Feature Grid Responsive */
+@media (max-width: 768px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Performance Graph Responsive */
+@media (max-width: 768px) {
+    .performance-graph {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .performance-subtitle {
+        font-size: 1rem;
+    }
+
+    #performanceGraph {
+        height: 300px !important;
+    }
+
+    .performance-highlights {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .highlight-metric {
+        padding: 1rem;
+    }
+}
+
+/* Comparison Table Responsive */
+@media (max-width: 768px) {
+    .comparison-table-wrapper {
+        overflow-x: auto;
+        margin: 0 -1rem;
+        padding: 0 1rem;
+    }
+
+    .comparison-table {
+        min-width: 600px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.75rem;
+    }
+}
+
+/* Models Section Responsive */
+@media (max-width: 992px) {
+    .models-section {
+        padding: 2rem 1rem;
+    }
+
+    .m5-cards {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+    }
+}
+
+/* Timeline Section Responsive */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 2rem;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        padding-left: 3rem;
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+
+    .timeline-year {
+        left: 0;
+        transform: translateX(-50%);
+    }
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+    .footer-nav {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+/* Floating Action Button Responsive */
+@media (max-width: 768px) {
+    .fab {
+        bottom: 1rem;
+        right: 1rem;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* Typography Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+    .feature-card:hover,
+    .highlight-metric:hover,
+    .card:hover {
+        transform: none;
+    }
+
+    .nav a {
+        padding: 0.75rem;
+    }
+
+    .btn {
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* High Resolution Screens */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .feature-card {
+        padding: 2.5rem;
+    }
+}

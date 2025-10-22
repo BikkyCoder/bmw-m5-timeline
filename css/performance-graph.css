@@ -1,0 +1,195 @@
+.performance-graph {
+    background: var(--gradient-hero);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    position: relative;
+    min-height: 880px;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+}
+
+.performance-graph:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg), 0 10px 30px rgba(0, 102, 204, 0.2);
+}
+
+.graph-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    pointer-events: none;
+    z-index: 100;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 250px;
+}
+
+.graph-point {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.graph-point:hover {
+    transform: scale(1.5);
+}
+
+.graph-legend {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.legend-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.legend-text {
+    color: var(--gray);
+    font-size: 0.875rem;
+}
+
+.graph-controls {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.graph-control-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.875rem;
+}
+
+.graph-control-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.graph-control-btn.active {
+    background: var(--m-blue);
+    color: white;
+}
+
+.section-title {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.performance-subtitle {
+    color: var(--gray);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+#performanceGraph {
+    width: 100% !important;
+    height: 350px !important;
+    margin: 0 auto;
+}
+
+.performance-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.highlight-metric {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.highlight-metric:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--m-blue);
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #0066cc, #1e90ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.metric-label {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.metric-description {
+    color: var(--gray);
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.performance-note {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--gray);
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+.trend-indicator {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    color: #00ff00;
+}
+
+.trend-indicator.positive {
+    color: #00ff00;
+}
+
+.trend-indicator.negative {
+    color: #ff0000;
+}
+
+.trend-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
