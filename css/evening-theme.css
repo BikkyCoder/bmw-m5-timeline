@@ -1,0 +1,100 @@
+.evening-theme {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+.hero.evening-gradient {
+    background: linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
+    padding: 4rem 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    color: #4a9eff;
+    margin-bottom: 2rem;
+}
+
+.hero-year {
+    color: #666666;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.key-specs-evening {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.spec-item-evening {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.spec-item-evening::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #0066ff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.spec-item-evening:hover::after {
+    transform: scaleX(1);
+}
+
+.spec-value-evening {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.spec-label-evening {
+    font-size: 1rem;
+    color: #666666;
+}
+
+.badge-evening {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 102, 255, 0.1);
+    border: 1px solid rgba(0, 102, 255, 0.2);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+}
+
+.badge-evening svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    color: #0066ff;
+}
+
+.badge-evening span {
+    color: #4a9eff;
+    font-size: 0.9rem;
+}
