@@ -4,11 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Us | BMW M5 Heritage - Get in Touch</title>
-  <meta name="description" content="Connect with BMW M5 Heritage experts. Questions about M5 history, specifications, or contributions? We're here to help. Reach out to our team of BMW enthusiasts and automotive specialists.">
-  <meta name="keywords" content="contact BMW M5 Heritage, BMW M5 experts, automotive consultancy, M5 specialist contact, BMW enthusiast community, M5 technical questions, automotive expertise, classic BMW consultation">
+  <meta name="description" content="Get expert assistance from BMW M5 Heritage specialists. Whether you have questions about M5 generations, need technical support, or want to contribute to our knowledge base, our team is here to help. 24-hour response time guaranteed.">
+  <meta name="keywords" content="contact BMW M5 Heritage, BMW M5 experts, automotive consultancy, M5 specialist contact, BMW enthusiast community, M5 technical support, automotive expertise, classic BMW consultation, E28 M5, E34 M5, E39 M5, E60 M5, F10 M5, F90 M5, G90 M5">
   <meta name="author" content="BMW M5 Heritage">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="contact" content="contact@bmwm5heritage.com">
+  <meta name="coverage" content="Worldwide">
+  <meta name="rating" content="General">
+  <meta name="revisit-after" content="7 days">
+  <meta name="target" content="all">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#005ce6">
   <link rel="canonical" href="https://bmwm5heritage.com/contact.html">
 
   <!-- Open Graph Tags -->
@@ -38,13 +49,35 @@
       "name": "BMW M5 Heritage",
       "description": "Expert resource for BMW M5 history and specifications",
       "url": "https://bmwm5heritage.com",
+      "location": {
+        "@type": "Place",
+        "name": "BMW M5 Heritage Headquarters",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Performance Drive",
+          "addressLocality": "Munich",
+          "addressCountry": "Germany",
+          "postalCode": "80939"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "48.177620",
+          "longitude": "11.556450"
+        }
+      },
       "contactPoint": [{
         "@type": "ContactPoint",
-        "telephone": "+1-555-0123",
+        "telephone": "+1-555-012-3456",
         "contactType": "customer service",
         "email": "contact@bmwm5heritage.com",
         "availableLanguage": ["English", "German"],
-        "areaServed": "Worldwide"
+        "areaServed": "Worldwide",
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
       }],
       "sameAs": [
         "https://twitter.com/bmwm5heritage",
@@ -52,6 +85,38 @@
         "https://instagram.com/bmwm5heritage",
         "https://linkedin.com/company/bmwm5heritage"
       ]
+    },
+    "faq": {
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What information do you need for technical inquiries?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Please include the M5 generation (e.g., E39, F90), specific component or system, and any relevant context or error messages."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How can I contribute content?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We welcome contributions from M5 experts and enthusiasts. Please use the contact form and select 'Contribute Content' to discuss your proposal."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you offer consulting services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our team provides expert consultation on M5 purchases, restoration projects, and technical matters. Contact us for rates and availability."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How quickly will I receive a response?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We aim to respond to all inquiries within 24 hours during business days. Technical questions may require additional research time."
+        }
+      }]
     }
   }
   </script>
@@ -271,41 +336,153 @@
     </div>
   </header>
 
-  <main class="container main">
-    <h1>Contact</h1>
-    <p>If you'd like to reach out, use the form below (demo - no backend). Submissions will show a success message.</p>
-
-    <form id="contactForm" class="contact-form">
-      <label>
-        Name
-        <input type="text" name="name" required>
-      </label>
-      <label>
-        Email
-        <input type="email" name="email" required>
-      </label>
-      <label>
-        Message
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-      <button type="submit">Send</button>
-      <p id="formMsg" class="form-msg" aria-live="polite"></p>
-    </form>
-
-  </main>
-
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 BMW Series Showcase</p>
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>BMW M5 Heritage</h4>
+          <p>Preserving and sharing the legacy of BMW's iconic M5 series.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect With Us</h4>
+          <div class="social-icons">
+            <a href="https://twitter.com/bmwm5heritage" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+              <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com/bmwm5heritage" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+              <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com/bmwm5heritage" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 BMW M5 Heritage. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
   <script>
     document.getElementById('contactForm').addEventListener('submit', function (e) {
       e.preventDefault();
-      document.getElementById('formMsg').textContent = 'Thanks! Your message is sent (demo).';
-      this.reset();
+      
+      // Reset previous error states
+      const errorElements = document.querySelectorAll('.error-message');
+      errorElements.forEach(el => el.remove());
+      const inputs = this.querySelectorAll('input, textarea, select');
+      inputs.forEach(input => input.classList.remove('error'));
+
+      let hasError = false;
+      
+      // Validate name
+      const nameInput = this.querySelector('#name');
+      if (nameInput.value.trim().length < 2) {
+        showError(nameInput, 'Please enter a valid name (minimum 2 characters)');
+        hasError = true;
+      }
+
+      // Validate email
+      const emailInput = this.querySelector('#email');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput.value)) {
+        showError(emailInput, 'Please enter a valid email address');
+        hasError = true;
+      }
+
+      // Validate subject
+      const subjectInput = this.querySelector('#subject');
+      if (!subjectInput.value) {
+        showError(subjectInput, 'Please select a subject');
+        hasError = true;
+      }
+
+      // Validate message
+      const messageInput = this.querySelector('#message');
+      if (messageInput.value.trim().length < 10) {
+        showError(messageInput, 'Please enter a message (minimum 10 characters)');
+        hasError = true;
+      }
+
+      // Check privacy policy
+      const privacyCheckbox = this.querySelector('input[type="checkbox"]');
+      if (!privacyCheckbox.checked) {
+        showError(privacyCheckbox.parentElement, 'Please accept the privacy policy and terms of service');
+        hasError = true;
+      }
+
+      if (!hasError) {
+        // Show success message
+        const formMsg = document.createElement('div');
+        formMsg.className = 'success-message';
+        formMsg.setAttribute('role', 'alert');
+        formMsg.textContent = 'Thank you for your message! We will get back to you within 24 hours.';
+        this.appendChild(formMsg);
+        
+        // Reset form
+        this.reset();
+        
+        // Scroll to success message
+        formMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
     });
+
+    function showError(element, message) {
+      element.classList.add('error');
+      const errorDiv = document.createElement('div');
+      errorDiv.className = 'error-message';
+      errorDiv.textContent = message;
+      element.parentNode.appendChild(errorDiv);
+    }
+
+    // Add Google Maps integration
+    function initMap() {
+      const bmwHQ = { lat: 48.177620, lng: 11.556450 };
+      const map = new google.maps.Map(document.querySelector('.location-map'), {
+        zoom: 15,
+        center: bmwHQ,
+        styles: [
+          {
+            featureType: 'all',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#7c93a3' }]
+          },
+          {
+            featureType: 'administrative.country',
+            elementType: 'geometry',
+            stylers: [{ visibility: 'on' }]
+          }
+          // Add more custom styling as needed
+        ]
+      });
+      
+      const marker = new google.maps.Marker({
+        position: bmwHQ,
+        map: map,
+        title: 'BMW M5 Heritage Headquarters'
+      });
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
   </script>
 </body>
 </html>
