@@ -1,0 +1,252 @@
+/* Modern Features Styling */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.feature-card {
+  position: relative;
+  background: var(--gradient-hero);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--m-blue) 0%, transparent 100%);
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-card:hover::before {
+  opacity: 0.2;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.5rem;
+  color: var(--m-blue);
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.feature-description {
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+/* Timeline Styling */
+.timeline {
+  position: relative;
+  padding: 4rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gradient-m);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 0;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+.timeline-content {
+  width: 45%;
+  padding: 2rem;
+  background: var(--gradient-hero);
+  border-radius: 15px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: scale(1.02);
+}
+
+.timeline-year {
+  position: absolute;
+  top: 50%;
+  width: 120px;
+  padding: 0.5rem 1rem;
+  background: var(--m-blue);
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: 600;
+  transform: translateY(-50%);
+}
+
+.timeline-item:nth-child(odd) .timeline-year {
+  right: -160px;
+}
+
+.timeline-item:nth-child(even) .timeline-year {
+  left: -160px;
+}
+
+/* Comparison Table */
+.comparison-table {
+  width: 100%;
+  margin: 4rem 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--gradient-hero);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-table th {
+  background: rgba(0, 102, 204, 0.2);
+  font-weight: 600;
+  color: white;
+}
+
+.comparison-table tr:hover td {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Interactive Elements */
+.spec-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.spec-tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  background: var(--gradient-hero);
+  color: white;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.spec-tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+/* 3D Model Viewer */
+.model-viewer-container {
+  width: 100%;
+  height: 500px;
+  margin: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--gradient-hero);
+}
+
+.model-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--gray);
+}
+
+/* Performance Graph */
+.performance-graph {
+  width: 100%;
+  height: 400px;
+  margin: 4rem 0;
+  background: var(--gradient-hero);
+  border-radius: 15px;
+  padding: 2rem;
+  position: relative;
+  color: white;
+}
+
+.graph-legend {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gray);
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+/* Floating Action Button */
+.fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--gradient-m);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
